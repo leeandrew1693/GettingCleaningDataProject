@@ -44,4 +44,4 @@ avgByActivityAndSubject <- aggregate(. ~ Subject + activityName, allCombined, me
 avgByActivityAndSubject <- avgByActivityAndSubject[order(avgByActivityAndSubject$activityName, avgByActivityAndSubject$Subject),]
 
 #Write it
-write.table(avgByActivityAndSubject, "homeworkAnswers.txt", row.name=FALSE)
+write.table(avgByActivityAndSubject, "averages.txt", row.name=FALSE)
